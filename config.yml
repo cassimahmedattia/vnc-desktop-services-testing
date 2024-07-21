@@ -1,1 +1,15 @@
-sudo docker run --rm -it --shm-size=512m -p 6901:6901 -e VNC_PW=password kasmweb/alpine-317-desktop:1.14.0
+#sudo apt install apt-transport-https ca-certificates curl software-properties-common gnupg-agent -y
+#curl -fsSL https://download.docker.com/linux/$(awk -F'=' '/^ID=/{ print $NF }' /etc/os-release)/gpg | sudo apt-key add -
+wget https://kasm-static-content.s3.amazonaws.com/kasm_release_service_images_amd64_1.15.0.06fdc8.tar.gz
+tar -xvf kasm_release_service_images_amd64_1.15.0.06fdc8.tar.gz
+sudo bash kasm_release/install.sh
+
+#sudo add-apt-repository "deb [arch=$(dpkg --print-architecture)] https://download.docker.com/linux/$(awk -F'=' '/^ID=/{ print $NF }' /etc/os-release) $(lsb_release -cs) stable"
+# install docker
+#sudo apt install docker-ce docker-compose containerd.io -y
+# enable and start docker service
+#sudo systemctl enable docker && sudo systemctl start docker
+# add the current user to the docker group
+#sudo usermod -aG docker $USER
+# reauthenticate for the new group membership to take effect
+#su - $USER
