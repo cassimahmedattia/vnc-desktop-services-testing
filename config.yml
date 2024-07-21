@@ -1,50 +1,45 @@
 Run actions/jekyll-build-pages@v1
-/usr/bin/docker run --name ghcrioactionsjekyllbuildpagesv104_1df267 --label 290506 --workdir /github/workspace --rm -e "INPUT_SOURCE" -e "INPUT_DESTINATION" -e "INPUT_FUTURE" -e "INPUT_BUILD_REVISION" -e "INPUT_VERBOSE" -e "INPUT_TOKEN" -e "HOME" -e "GITHUB_JOB" -e "GITHUB_REF" -e "GITHUB_SHA" -e "GITHUB_REPOSITORY" -e "GITHUB_REPOSITORY_OWNER" -e "GITHUB_RUN_ID" -e "GITHUB_RUN_NUMBER" -e "GITHUB_RETENTION_DAYS" -e "GITHUB_RUN_ATTEMPT" -e "GITHUB_ACTOR" -e "GITHUB_TRIGGERING_ACTOR" -e "GITHUB_WORKFLOW" -e "GITHUB_HEAD_REF" -e "GITHUB_BASE_REF" -e "GITHUB_EVENT_NAME" -e "GITHUB_SERVER_URL" -e "GITHUB_API_URL" -e "GITHUB_GRAPHQL_URL" -e "GITHUB_REF_NAME" -e "GITHUB_REF_PROTECTED" -e "GITHUB_REF_TYPE" -e "GITHUB_WORKSPACE" -e "GITHUB_ACTION" -e "GITHUB_EVENT_PATH" -e "GITHUB_ACTION_REPOSITORY" -e "GITHUB_ACTION_REF" -e "GITHUB_PATH" -e "GITHUB_ENV" -e "GITHUB_STEP_SUMMARY" -e "GITHUB_STATE" -e "GITHUB_OUTPUT" -e "RUNNER_OS" -e "RUNNER_ARCH" -e "RUNNER_NAME" -e "RUNNER_TOOL_CACHE" -e "RUNNER_TEMP" -e "RUNNER_WORKSPACE" -e "ACTIONS_RUNTIME_URL" -e "ACTIONS_RUNTIME_TOKEN" -e "ACTIONS_CACHE_URL" -e "ACTIONS_ID_TOKEN_REQUEST_URL" -e "ACTIONS_ID_TOKEN_REQUEST_TOKEN" -e GITHUB_ACTIONS=true -e CI=true -v "/var/run/docker.sock":"/var/run/docker.sock" -v "/home/runner/work/_temp/_github_home":"/github/home" -v "/home/runner/work/_temp/_github_workflow":"/github/workflow" -v "/home/runner/work/_temp/_runner_file_commands":"/github/file_commands" -v "/home/runner/work/stutichugh.github.io/stutichugh.github.io":"/github/workspace" ghcr.io/actions/jekyll-build-pages:v1.0.4
+  with:
+    source: .
+    destination: ./_site
+    future: false
+    build_revision: 0b4044a5e1dbc4e647f[2](https://github.com/dislorth/Encriptador-v0.0.1/actions/runs/5093992674/jobs/9157396388#step:4:2)9d1[3](https://github.com/dislorth/Encriptador-v0.0.1/actions/runs/5093992674/jobs/9157396388#step:4:3)9ea5f9[4](https://github.com/dislorth/Encriptador-v0.0.1/actions/runs/5093992674/jobs/9157396388#step:4:4)12d[5](https://github.com/dislorth/Encriptador-v0.0.1/actions/runs/5093992674/jobs/9157396388#step:4:5)cc079
+    verbose: true
+    token: ***
+/usr/bin/docker run --name ghcrioactionsjekyllbuildpagesv107_428e72 --label ed8[6](https://github.com/dislorth/Encriptador-v0.0.1/actions/runs/5093992674/jobs/9157396388#step:4:6)6e --workdir /github/workspace --rm -e "INPUT_SOURCE" -e "INPUT_DESTINATION" -e "INPUT_FUTURE" -e "INPUT_BUILD_REVISION" -e "INPUT_VERBOSE" -e "INPUT_TOKEN" -e "HOME" -e "GITHUB_JOB" -e "GITHUB_REF" -e "GITHUB_SHA" -e "GITHUB_REPOSITORY" -e "GITHUB_REPOSITORY_OWNER" -e "GITHUB_REPOSITORY_OWNER_ID" -e "GITHUB_RUN_ID" -e "GITHUB_RUN_NUMBER" -e "GITHUB_RETENTION_DAYS" -e "GITHUB_RUN_ATTEMPT" -e "GITHUB_REPOSITORY_ID" -e "GITHUB_ACTOR_ID" -e "GITHUB_ACTOR" -e "GITHUB_TRIGGERING_ACTOR" -e "GITHUB_WORKFLOW" -e "GITHUB_HEAD_REF" -e "GITHUB_BASE_REF" -e "GITHUB_EVENT_NAME" -e "GITHUB_SERVER_URL" -e "GITHUB_API_URL" -e "GITHUB_GRAPHQL_URL" -e "GITHUB_REF_NAME" -e "GITHUB_REF_PROTECTED" -e "GITHUB_REF_TYPE" -e "GITHUB_WORKFLOW_REF" -e "GITHUB_WORKFLOW_SHA" -e "GITHUB_WORKSPACE" -e "GITHUB_ACTION" -e "GITHUB_EVENT_PATH" -e "GITHUB_ACTION_REPOSITORY" -e "GITHUB_ACTION_REF" -e "GITHUB_PATH" -e "GITHUB_ENV" -e "GITHUB_STEP_SUMMARY" -e "GITHUB_STATE" -e "GITHUB_OUTPUT" -e "RUNNER_OS" -e "RUNNER_ARCH" -e "RUNNER_NAME" -e "RUNNER_TOOL_CACHE" -e "RUNNER_TEMP" -e "RUNNER_WORKSPACE" -e "ACTIONS_RUNTIME_URL" -e "ACTIONS_RUNTIME_TOKEN" -e "ACTIONS_CACHE_URL" -e "ACTIONS_ID_TOKEN_REQUEST_URL" -e "ACTIONS_ID_TOKEN_REQUEST_TOKEN" -e GITHUB_ACTIONS=true -e CI=true -v "/var/run/docker.sock":"/var/run/docker.sock" -v "/home/runner/work/_temp/_github_home":"/github/home" -v "/home/runner/work/_temp/_github_workflow":"/github/workflow" -v "/home/runner/work/_temp/_runner_file_commands":"/github/file_commands" -v "/home/runner/work/Encriptador-v0.0.1/Encriptador-v0.0.1":"/github/workspace" ghcr.io/actions/jekyll-build-pages:v1.0.[7](https://github.com/dislorth/Encriptador-v0.0.1/actions/runs/5093992674/jobs/9157396388#step:4:7)
+Configuration file: none
   Logging at level: debug
-Configuration file: /github/workspace/./_config.yml
-      GitHub Pages: github-pages v227
-      GitHub Pages: jekyll v3.9.2
+      GitHub Pages: github-pages v22[8](https://github.com/dislorth/Encriptador-v0.0.1/actions/runs/5093992674/jobs/9157396388#step:4:8)
+      GitHub Pages: jekyll v3.[9](https://github.com/dislorth/Encriptador-v0.0.1/actions/runs/5093992674/jobs/9157396388#step:4:10).3
              Theme: jekyll-theme-primer
       Theme source: /usr/local/bundle/gems/jekyll-theme-primer-0.6.0
          Requiring: jekyll-github-metadata
 To use retry middleware with Faraday v2.0+, install `faraday-retry` gem
-YAML Exception reading /github/workspace/2021-09-15-comedy.html: (<unknown>): did not find expected key while parsing a block mapping at line 2 column 1 
-  Liquid Exception: Liquid error (line 93): Cannot sort a null object. in /_layouts/post.html
-
-#docker pull kasmweb/alpine-317-desktop
-
-{% assign categories = page.categories %}
-{% if categories.size > 0 %}
-
-{% assign categories = page.categories %}
-{% if categories.size > 0 %}
-<div class="after-post-cats">
-    <ul class="tags mb-4">
-        <p>Categories:</p>
-        {% assign sortedCategories = categories | sort %}
-        {% for category in sortedCategories %}
-        <li>
-            <a class="smoothscroll" href="{{site.baseurl}}/categories#{{ category | replace: " "," -" }}">{{
-                category }}</a>
-        </li>
-        {% endfor %}
-    </ul>
-</div>
-{% endif %}
-
-{% assign tags = page.tags %}
-{% if tags.size > 0 %}
-<div class="after-post-tags">
-    <ul class="tags">
-        <p>Tags:</p>
-        {% assign sortedTags = tags | sort %}
-        {% for tag in sortedTags %}
-        <li>
-            <a class="smoothscroll" href="{{site.baseurl}}/tags#{{ tag | replace: " "," -" }}">#{{ tag
-                }}</a>
-        </li>
-        {% endfor %}
-    </ul>
-</div>
-{% endif %}
-
+         Requiring: jekyll-seo-tag
+         Requiring: jekyll-coffeescript
+         Requiring: jekyll-commonmark-ghpages
+         Requiring: jekyll-gist
+         Requiring: jekyll-github-metadata
+         Requiring: jekyll-paginate
+         Requiring: jekyll-relative-links
+         Requiring: jekyll-optional-front-matter
+         Requiring: jekyll-readme-index
+         Requiring: jekyll-default-layout
+         Requiring: jekyll-titles-from-headings
+   GitHub Metadata: Initializing...
+            Source: /github/workspace/.
+       Destination: /github/workspace/./_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+        Generating: JekyllOptionalFrontMatter::Generator finished in 5.3601e-05 seconds.
+        Generating: JekyllReadmeIndex::Generator finished in 4.3001e-05 seconds.
+        Generating: Jekyll::Paginate::Pagination finished in 3.8e-06 seconds.
+        Generating: JekyllRelativeLinks::Generator finished in 1.2501e-05 seconds.
+        Generating: JekyllDefaultLayout::Generator finished in 1.02e-05 seconds.
+        Generating: JekyllTitlesFromHeadings::Generator finished in 7.1e-06 seconds.
+         Rendering: assets/css/style.scss
+  Pre-Render Hooks: assets/css/style.scss
+  Rendering Markup: assets/css/style.scss
+           Writing: /github/workspace/_site/assets/css/style.css
+                    done in 1.2[14](https://github.com/dislorth/Encriptador-v0.0.1/actions/runs/5093992674/jobs/9157396388#step:4:15) seconds.
+ Auto-regeneration: disabled. Use --watch to enable.
