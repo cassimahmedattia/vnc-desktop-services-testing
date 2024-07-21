@@ -1,1 +1,50 @@
-docker pull kasmweb/alpine-317-desktop
+Run actions/jekyll-build-pages@v1
+/usr/bin/docker run --name ghcrioactionsjekyllbuildpagesv104_1df267 --label 290506 --workdir /github/workspace --rm -e "INPUT_SOURCE" -e "INPUT_DESTINATION" -e "INPUT_FUTURE" -e "INPUT_BUILD_REVISION" -e "INPUT_VERBOSE" -e "INPUT_TOKEN" -e "HOME" -e "GITHUB_JOB" -e "GITHUB_REF" -e "GITHUB_SHA" -e "GITHUB_REPOSITORY" -e "GITHUB_REPOSITORY_OWNER" -e "GITHUB_RUN_ID" -e "GITHUB_RUN_NUMBER" -e "GITHUB_RETENTION_DAYS" -e "GITHUB_RUN_ATTEMPT" -e "GITHUB_ACTOR" -e "GITHUB_TRIGGERING_ACTOR" -e "GITHUB_WORKFLOW" -e "GITHUB_HEAD_REF" -e "GITHUB_BASE_REF" -e "GITHUB_EVENT_NAME" -e "GITHUB_SERVER_URL" -e "GITHUB_API_URL" -e "GITHUB_GRAPHQL_URL" -e "GITHUB_REF_NAME" -e "GITHUB_REF_PROTECTED" -e "GITHUB_REF_TYPE" -e "GITHUB_WORKSPACE" -e "GITHUB_ACTION" -e "GITHUB_EVENT_PATH" -e "GITHUB_ACTION_REPOSITORY" -e "GITHUB_ACTION_REF" -e "GITHUB_PATH" -e "GITHUB_ENV" -e "GITHUB_STEP_SUMMARY" -e "GITHUB_STATE" -e "GITHUB_OUTPUT" -e "RUNNER_OS" -e "RUNNER_ARCH" -e "RUNNER_NAME" -e "RUNNER_TOOL_CACHE" -e "RUNNER_TEMP" -e "RUNNER_WORKSPACE" -e "ACTIONS_RUNTIME_URL" -e "ACTIONS_RUNTIME_TOKEN" -e "ACTIONS_CACHE_URL" -e "ACTIONS_ID_TOKEN_REQUEST_URL" -e "ACTIONS_ID_TOKEN_REQUEST_TOKEN" -e GITHUB_ACTIONS=true -e CI=true -v "/var/run/docker.sock":"/var/run/docker.sock" -v "/home/runner/work/_temp/_github_home":"/github/home" -v "/home/runner/work/_temp/_github_workflow":"/github/workflow" -v "/home/runner/work/_temp/_runner_file_commands":"/github/file_commands" -v "/home/runner/work/stutichugh.github.io/stutichugh.github.io":"/github/workspace" ghcr.io/actions/jekyll-build-pages:v1.0.4
+  Logging at level: debug
+Configuration file: /github/workspace/./_config.yml
+      GitHub Pages: github-pages v227
+      GitHub Pages: jekyll v3.9.2
+             Theme: jekyll-theme-primer
+      Theme source: /usr/local/bundle/gems/jekyll-theme-primer-0.6.0
+         Requiring: jekyll-github-metadata
+To use retry middleware with Faraday v2.0+, install `faraday-retry` gem
+YAML Exception reading /github/workspace/2021-09-15-comedy.html: (<unknown>): did not find expected key while parsing a block mapping at line 2 column 1 
+  Liquid Exception: Liquid error (line 93): Cannot sort a null object. in /_layouts/post.html
+
+#docker pull kasmweb/alpine-317-desktop
+
+{% assign categories = page.categories %}
+{% if categories.size > 0 %}
+
+{% assign categories = page.categories %}
+{% if categories.size > 0 %}
+<div class="after-post-cats">
+    <ul class="tags mb-4">
+        <p>Categories:</p>
+        {% assign sortedCategories = categories | sort %}
+        {% for category in sortedCategories %}
+        <li>
+            <a class="smoothscroll" href="{{site.baseurl}}/categories#{{ category | replace: " "," -" }}">{{
+                category }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endif %}
+
+{% assign tags = page.tags %}
+{% if tags.size > 0 %}
+<div class="after-post-tags">
+    <ul class="tags">
+        <p>Tags:</p>
+        {% assign sortedTags = tags | sort %}
+        {% for tag in sortedTags %}
+        <li>
+            <a class="smoothscroll" href="{{site.baseurl}}/tags#{{ tag | replace: " "," -" }}">#{{ tag
+                }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endif %}
+
